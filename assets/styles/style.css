@@ -1,13 +1,55 @@
+@font-face {
+  font-family: 'One Night Sans Extended Thin';
+  src: url(../fonts/OneNightSans-ExtendedThin.ttf) format('truetype'),
+  url(../fonts/OneNightSans-ExtendedThin.woff) format('woff'),
+  url(../fonts/OneNightSans-ExtendedThin.woff2 ) format('woff2');
+}
+@font-face {
+  font-family: 'One Night Sans Extended';
+  src: url(../fonts/OneNightSans-Extended.ttf) format('truetype'),
+  url(../fonts/OneNightSans-Extended.woff) format('woff'),
+  url(../fonts/OneNightSans-Extended.woff2 ) format('woff2');
+}
+@font-face {
+  font-family: 'One Night Sans Extended Black';
+  src: url(../fonts/OneNightSans-ExtendedBlack.ttf) format('truetype'),
+  url(../fonts/OneNightSans-ExtendedBlack.woff) format('woff'),
+  url(../fonts/OneNightSans-ExtendedBlack.woff2 ) format('woff2');
+}
+@font-face {
+  font-family: 'One Night Sans Thin';
+  src: url(../fonts/OneNightSans-Thin.ttf) format('truetype'),
+  url(../fonts/OneNightSans-Thin.woff) format('woff'),
+  url(../fonts/OneNightSans-Thin.woff2 ) format('woff2');
+}
+@font-face {
+  font-family: 'One Night Sans Medium';
+  src: url(../fonts/OneNightSans-Medium.ttf) format('truetype'),
+  url(../fonts/OneNightSans-Medium.woff) format('woff'),
+  url(../fonts/OneNightSans-Medium.woff2 ) format('woff2');
+}
+@font-face {
+  font-family: 'One Night Sans Black';
+  src: url(../fonts/OneNightSans-Black.ttf) format('truetype'),
+  url(../fonts/OneNightSans-Black.woff) format('woff'),
+  url(../fonts/OneNightSans-Black.woff2 ) format('woff2');
+}
+
 #es-durex.es-durex {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'One Night Sans Extended', sans-serif;
   font-size: 16px;
   line-height: 1.2;
   max-width: 959px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  color: #005baa;
+  color: #001e6f;
   background: #fff;
+}
+
+#es-durex.es-durex html, body, div, section {
+  margin: 0;
+  padding: 0;
 }
 
 #es-durex.es-durex .es-kv {
@@ -15,15 +57,12 @@
 }
 
 #es-durex.es-durex .es-kv__container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#1d174f));
-  background: linear-gradient(#000000, #1d174f);
-}
-
-#es-durex.es-durex .es-kv__logo {
-  padding: 22px 0 35px 0;
+  background-image: url("../img/bg.png");
+  padding: 3rem;
 }
 
 #es-durex.es-durex .es-kv__title {
+  font-family: 'One Night Sans Extended', sans-serif;
   margin: 0;
   padding: 0;
   line-height: inherit;
@@ -31,16 +70,12 @@
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
-  font-weight: 800;
-  color: #fff;
+  color: #001e6f;
+  margin-bottom: 2rem;
 }
 
 #es-durex.es-durex .es-kv__title--second {
-  font-weight: 200;
-}
-
-#es-durex.es-durex .es-kv__title--third {
-  font-weight: 800;
+  font-family: 'One Night Sans Extended Thin', sans-serif;
 }
 
 #es-durex.es-durex .es-kv__packshot {
@@ -56,6 +91,7 @@
   max-width: 100%;
   display: block;
   margin: 0 auto;
+ 
 }
 
 #es-durex.es-durex .es-kv__img-packshot {
@@ -80,31 +116,62 @@
   width: 100%;
 }
 
+
+@media (min-width: 768px) {
+  #es-durex.es-durex .es-kv__container {
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    background-image: url(../img/kv-desktop.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 340px;
+    padding: unset;
+  }
+  #es-durex.es-durex .es-kv__title {
+    font-size: 38px;
+    position: absolute;
+    top: 11%;
+    right: 2%;
+    width: 8ch;
+    text-align: left;
+    margin-bottom: unset;
+  }
+  #es-durex.es-durex .es-kv__title--second {
+    font-size: 30px;
+    margin-left: -2ch;
+  }
+  #es-durex.es-durex .es-kv__packshot {
+    position: absolute;
+    left: 49%;
+    top: 83%;
+    transform: translate(-50%,-50%);
+  }
+  #es-durex.es-durex .es-kv__img {
+    max-width: 230px;
+  }
+
+  #es-durex.es-durex .es-kv__photo {
+    display: none;
+  }
+}
+
+/* es-features */
 #es-durex.es-durex .es-features {
-  padding: 0 16px;
+  padding: 2rem;
+  background-image: url(../img/bg.png);
+  background-size: cover;
 }
 
-#es-durex.es-durex .es-features__title {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  font-size: 47px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 45px 0;
-  font-weight: 800;
-}
-
-#es-durex.es-durex .es-features__title span {
-  font-weight: 200;
-}
 
 #es-durex.es-durex .es-features__feature {
-  margin: 16px 0 48px 0;
+  padding: 16px 0 48px 0;
+
 }
 
 #es-durex.es-durex .es-features .es-feature__img {
   max-width: 100%;
+  max-height: 80px;
   display: block;
   margin: 0 auto;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -126,14 +193,52 @@
   font-size: 17px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 200;
+  font-family: "One Night Sans Thin";
 }
 
-#es-durex.es-durex .es-features .es-feature__text strong {
+#es-durex.es-durex .es-features .es-feature__text--bold {
   display: block;
-  font-weight: 800;
+  font-family: 'One Night Sans Extended Black', sans-serif;
 }
+@media (min-width: 768px) {
+  #es-durex.es-durex .es-features {
+    min-height: 310px;
+    display: flex;
+  }
+  #es-durex.es-durex .es-features__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+  }
 
+  #es-durex.es-durex .es-features__feature {
+    padding: unset;
+  }
+  #es-durex.es-durex .es-features .es-feature__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #es-durex.es-durex .es-features .es-feature__img {
+    max-height: 110px;
+  }
+  #es-durex.es-durex .es-features .es-feature__text {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
 #es-durex.es-durex .es-benefits {
   margin: 45px 0 0 0;
   padding: 45px 16px;
@@ -931,82 +1036,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  #es-durex.es-durex .es-kv {
-    position: relative;
-  }
-  #es-durex.es-durex .es-kv__title {
-    font-size: 38px;
-  }
-  #es-durex.es-durex .es-kv__title--second {
-    font-size: 38px;
-  }
-  #es-durex.es-durex .es-kv__title--third {
-    font-size: 38px;
-  }
-  #es-durex.es-durex .es-kv__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 0 216px 216px 0;
-    max-width: 70%;
-    position: relative;
-    z-index: 2;
-  }
-  #es-durex.es-durex .es-kv__content {
-    margin-left: 48px;
-  }
-  #es-durex.es-durex .es-kv__packshot {
-    left: -3%;
-  }
-  #es-durex.es-durex .es-kv__photo {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-  }
-  #es-durex.es-durex .es-kv__img-packshot {
-    max-width: none;
-  }
-  #es-durex.es-durex .es-kv__img-photo {
-    height: 100%;
-    width: auto;
-    max-height: 100%;
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: auto;
-  }
-  #es-durex.es-durex .es-features__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  #es-durex.es-durex .es-features__feature {
-    margin: 0;
-  }
-  #es-durex.es-durex .es-features__feature:not(:last-child) {
-    margin-right: 8px;
-  }
-  #es-durex.es-durex .es-features .es-feature__icon {
-    height: 105px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #es-durex.es-durex .es-features .es-feature__text {
-    margin-bottom: 0;
-    font-size: 16px;
-  }
+
   #es-durex.es-durex .es-benefits {
     padding: 16px;
     display: -webkit-box;
