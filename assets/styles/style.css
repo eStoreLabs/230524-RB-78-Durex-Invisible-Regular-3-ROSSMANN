@@ -546,7 +546,44 @@
     right: 39%;
   }
 }
-
+@media (min-width: 870px) {
+  #es-durex.es-durex .es-line--1 {
+    width: 104px;
+    transform: rotate(39deg);
+    top: 30%;
+    left: 38%;
+  }
+  #es-durex.es-durex .es-line--2 {
+    width: 140px;
+    transform: rotate(13deg);
+    top: 50%;
+    left: 32%;
+  }
+  #es-durex.es-durex .es-line--3 {
+    width: 127px;
+    transform: rotate(354deg);
+    top: 74%;
+    left: 33%;
+  }
+  #es-durex.es-durex .es-line--4 {
+    width: 146px;
+    transform: rotate(353deg);
+    top: 18%;
+    right: 34%;
+  }
+  #es-durex.es-durex .es-line--5 {
+    width: 164px;
+    transform: rotate(354deg);
+    top: 50%;
+    right: 29%;
+  }
+  #es-durex.es-durex .es-line--6 {
+    width: 128px;
+    transform: rotate(0deg);
+    top: 78%;
+    right: 33%;
+  }
+}
 
 /***************************** know styles ***************************/
 
