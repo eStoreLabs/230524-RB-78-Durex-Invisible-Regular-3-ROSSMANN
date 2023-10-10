@@ -98,28 +98,6 @@ for (let esElement = 0; esElement < revealBenefits.length; esElement++) {
     .addTo(controller);
 }
 
-const revealBanner = document.getElementsByClassName("es-banner__photo");
-for (let esElement = 0; esElement < revealBanner.length; esElement++) {
-  new ScrollMagic.Scene({
-    triggerElement: revealBanner[esElement],
-    offset: 50 + esElement * 75,
-    triggerHook: 0.9,
-    reverse: false
-  })
-    .setClassToggle(revealBanner[esElement], "visible")
-    .addTo(controller);
-}
 
-const revealInstruction = document.getElementsByClassName(
-  "es-instruction__step"
-);
-for (let esElement3 = 0; esElement3 < revealInstruction.length; esElement3++) {
-  new ScrollMagic.Scene({
-    triggerElement: revealInstruction[esElement3],
-    offset: 50,
-    triggerHook: 0.8,
-    reverse: false
-  })
-    .setClassToggle(revealInstruction[esElement3], "visible")
-    .addTo(controller);
-}
+
+
