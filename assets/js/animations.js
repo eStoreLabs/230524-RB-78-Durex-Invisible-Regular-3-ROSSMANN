@@ -99,5 +99,3 @@ for (let esElement = 0; esElement < revealBenefits.length; esElement++) {
 }
 
 
-
-
