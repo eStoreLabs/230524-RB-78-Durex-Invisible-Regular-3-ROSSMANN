@@ -313,7 +313,7 @@
   padding: 0;
   line-height: inherit;
   margin: 24px 0;
-  font-size: 17px;
+  font-size: clamp(0.875rem, 0.7917rem + 0.3704vw, 1.125rem);
   text-align: center;
   text-transform: uppercase;
   font-family: "One Night Sans Thin";
@@ -360,6 +360,97 @@
   #es-durex.es-durex .es-features .es-feature__text {
     margin-bottom: 0;
     font-size: 16px;
+  }
+}
+
+/***************************** slider styles ***************************/
+#es-durex.es-durex .es-slider .es-carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+#es-durex.es-durex .es-slider .es-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 300%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#es-durex.es-durex .es-slider .es-slide {
+  flex: 0 0 33.3333%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/img/slider-bg.png);
+  background-size: cover;
+}
+#es-durex.es-durex .es-slider .es-slide__img {
+  max-width: 100%;
+}
+#es-durex.es-durex .es-slider .es-slide__container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-inline: 4rem;
+}
+#es-durex.es-durex .es-slider .es-slide__title {
+  font-family: "One Night Sans Extended Black", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(1.375rem, 0.9583rem + 1.8519vw, 2.625rem);
+}
+#es-durex.es-durex .es-slider .es-slide__text {
+  font-family: "One Night Sans Medium", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(0.875rem, 0.7917rem + 0.3704vw, 1.125rem);
+}
+#es-durex.es-durex .es-slider .es-slide__text--smaller {
+  font-family: "One Night Sans Medium", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 0.6667rem + 0.3704vw, 1rem);
+}
+#es-durex.es-durex .es-slider .es-carousel-arrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#es-durex.es-durex .es-slider .es-prev-arrow,
+#es-durex.es-durex .es-slider .es-next-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+}
+#es-durex.es-durex .es-slider .es-prev-arrow {
+  width: 50px;
+  height: 50px;
+  rotate: 180deg;
+}
+#es-durex.es-durex .es-slider .es-next-arrow {
+  width: 50px;
+  height: 50px;
+}
+#es-durex.es-durex .es-slider .es-prev-arrow:hover,
+#es-durex.es-durex .es-slider .es-next-arrow:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #es-durex.es-durex .es-slider .es-carousel {
+    width: 300%;
+  }
+  #es-durex.es-durex .es-slider .es-slide {
+    flex: 0 0 33.3333%;
+    width: 100vw;
+    flex-direction: row;
+  }
+
+  #es-durex.es-durex .es-slider .es-slide__container {
+    padding-inline: 0rem 4rem;
   }
 }
 
