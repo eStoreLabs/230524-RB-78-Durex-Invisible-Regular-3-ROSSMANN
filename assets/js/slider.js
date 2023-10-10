@@ -32,7 +32,7 @@ const moveToPrevSlide = () => {
     moveToSlide(currentIndex);
 };
 // Automatically change slides every 3 seconds
-//setInterval(moveToNextSlide, 3000);
+setInterval(moveToNextSlide, 3000);
 
 // Event listeners for arrow buttons
 nextArrow.addEventListener('click', moveToNextSlide);
