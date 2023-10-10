@@ -683,155 +683,15 @@
 
 
 
-#es-durex.es-durex .es-banner__photo {
-  margin-right: 16px;
-}
-
-#es-durex.es-durex .es-banner__img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  margin-left: 0;
-}
-
-#es-durex.es-durex .es-banner__text {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  font-size: 32px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0 16px;
-  margin-bottom: 45px;
-}
-
-#es-durex.es-durex .es-banner__text strong {
-  font-weight: 800;
-}
 
 
 
-#es-durex.es-durex .es-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  padding: 0 16px;
-  margin: 45px 0;
-}
 
-#es-durex.es-durex .es-info__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-#es-durex.es-durex .es-info__title {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  padding: 0 16px;
-  font-size: 30px;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-align: center;
-}
 
-#es-durex.es-durex .es-info__text {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  margin: 24px 0;
-  font-size: 24px;
-  text-align: center;
-  font-weight: 400;
-}
 
-#es-durex.es-durex .es-info__arrow {
-  margin: 32px 0;
-  -webkit-animation: point 1.5s infinite ease-out;
-          animation: point 1.5s infinite ease-out;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
 
-#es-durex.es-durex .es-info__img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
 
-#es-durex.es-durex .es-info__condom {
-  margin-top: 16px;
-  cursor: pointer;
-}
-
-#es-durex.es-durex .es-info__condom:hover .es-info__condom-1 {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-}
-
-#es-durex.es-durex .es-info__condom:hover .es-info__condom-2 {
-  -webkit-transform: translateY(-41%);
-          transform: translateY(-41%);
-}
-
-#es-durex.es-durex .es-info__condom-1 {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  position: relative;
-  z-index: 2;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-}
-
-#es-durex.es-durex .es-info__condom-2 {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  -webkit-transform: translateY(-4%);
-          transform: translateY(-4%);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-}
-
-#es-durex.es-durex .es-video {
-  margin: 45px 0px;
-}
-
-#es-durex.es-durex .es-video__container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-#es-durex.es-durex .es-video__iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
 
 
 
@@ -1182,75 +1042,8 @@
 @media screen and (min-width: 768px) {
 
 
- 
-  #es-durex.es-durex .es-info {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #es-durex.es-durex .es-info__title {
-    font-size: 59px;
-    font-weight: 800;
-  }
-  #es-durex.es-durex .es-info__content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  #es-durex.es-durex .es-info__text {
-    padding: 0 48px;
-  }
-  #es-durex.es-durex .es-info__arrow {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    margin-left: -32px;
-    -webkit-animation: point-horizontal 1.5s infinite ease-out;
-            animation: point-horizontal 1.5s infinite ease-out;
-  }
-  #es-durex.es-durex .es-info__img {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  #es-durex.es-durex .es-info__condom {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-  }
-  #es-durex.es-durex .es-experience__title {
-    font-size: 52px;
-  }
-  #es-durex.es-durex .es-experience__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #es-durex.es-durex .es-experience__single {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    margin: 0;
-  }
-  #es-durex.es-durex .es-experience__icon {
-    min-height: 130px;
-  }
-  #es-durex.es-durex .es-experience__text {
-    margin: 20px auto;
-    max-width: 83.33333%;
-  }
-  #es-durex.es-durex .es-test__title {
-    font-size: 48px;
-  }
+
+  
   #es-durex.es-durex .es-faq__title {
     font-size: 48px;
   }
