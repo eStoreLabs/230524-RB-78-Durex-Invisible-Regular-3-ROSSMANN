@@ -1,39 +1,151 @@
+:root {
+  --es-navy-bg: #041a71;
+  --es-navy-txt: #001e6f;
+}
 @font-face {
   font-family: 'One Night Sans Extended Thin';
-  src: url(../fonts/OneNightSans-ExtendedThin.ttf) format('truetype'),
+  src: 
   url(../fonts/OneNightSans-ExtendedThin.woff) format('woff'),
   url(../fonts/OneNightSans-ExtendedThin.woff2 ) format('woff2');
 }
 @font-face {
   font-family: 'One Night Sans Extended';
-  src: url(../fonts/OneNightSans-Extended.ttf) format('truetype'),
+  src: 
   url(../fonts/OneNightSans-Extended.woff) format('woff'),
   url(../fonts/OneNightSans-Extended.woff2 ) format('woff2');
 }
 @font-face {
   font-family: 'One Night Sans Extended Black';
-  src: url(../fonts/OneNightSans-ExtendedBlack.ttf) format('truetype'),
+  src: 
   url(../fonts/OneNightSans-ExtendedBlack.woff) format('woff'),
   url(../fonts/OneNightSans-ExtendedBlack.woff2 ) format('woff2');
 }
 @font-face {
   font-family: 'One Night Sans Thin';
-  src: url(../fonts/OneNightSans-Thin.ttf) format('truetype'),
+  src: 
   url(../fonts/OneNightSans-Thin.woff) format('woff'),
   url(../fonts/OneNightSans-Thin.woff2 ) format('woff2');
 }
 @font-face {
   font-family: 'One Night Sans Medium';
-  src: url(../fonts/OneNightSans-Medium.ttf) format('truetype'),
+  src: 
   url(../fonts/OneNightSans-Medium.woff) format('woff'),
   url(../fonts/OneNightSans-Medium.woff2 ) format('woff2');
 }
 @font-face {
   font-family: 'One Night Sans Black';
-  src: url(../fonts/OneNightSans-Black.ttf) format('truetype'),
+  src: 
   url(../fonts/OneNightSans-Black.woff) format('woff'),
   url(../fonts/OneNightSans-Black.woff2 ) format('woff2');
 }
+
+/*********************************************************************/
+/***************************** animations ***************************/
+/*********************************************************************/
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-10%, -50%) rotate(30deg);
+            transform: translate(-10%, -50%) rotate(30deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-10%, -50%) rotate(30deg);
+            transform: translate(-10%, -50%) rotate(30deg);
+  }
+}
+
+@-webkit-keyframes point {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes point {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes point-horizontal {
+  0% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes point-horizontal {
+  0% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*********************************************************************/
+/***************************** main styles ***************************/
+/*********************************************************************/
 
 #es-durex.es-durex {
   font-family: 'One Night Sans Extended', sans-serif;
@@ -43,7 +155,7 @@
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  color: #001e6f;
+  color: var(--es-navy-txt);
   background: #fff;
 }
 
@@ -51,6 +163,8 @@
   margin: 0;
   padding: 0;
 }
+
+/***************************** kv styles ***************************/
 
 #es-durex.es-durex .es-kv {
   position: relative;
@@ -70,7 +184,7 @@
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
-  color: #001e6f;
+  color: var(--es-navy-txt);
   margin-bottom: 2rem;
 }
 
@@ -122,7 +236,7 @@
     max-width: 100%;
     position: relative;
     z-index: 2;
-    background-image: url(../img/kv-desktop.png);
+    background-image: url("../img/kv-desktop.png");
     background-size: cover;
     background-position: center;
     min-height: 340px;
@@ -156,17 +270,26 @@
   }
 }
 
-/* es-features */
+/***************************** features styles ***************************/
 #es-durex.es-durex .es-features {
   padding: 2rem;
-  background-image: url(../img/bg.png);
+  background-image: url("../img/bg.png");
   background-size: cover;
 }
 
 
 #es-durex.es-durex .es-features__feature {
   padding: 16px 0 48px 0;
-
+  opacity: 0;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+#es-durex.es-durex .es-features__feature.visible {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 #es-durex.es-durex .es-features .es-feature__img {
@@ -239,95 +362,50 @@
     font-size: 16px;
   }
 }
+
+/***************************** benefits styles ***************************/
+
 #es-durex.es-durex .es-benefits {
-  margin: 45px 0 0 0;
   padding: 45px 16px;
-  background-color: #005baa;
+  background-color: var(--es-navy-bg);
 }
 
-#es-durex.es-durex .es-benefits__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#es-durex.es-durex .es-benefits__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
 #es-durex.es-durex .es-benefits__title {
+  font-family: "One Night Sans Extended Thin", sans-serif;
   margin: 0;
   padding: 0;
   line-height: inherit;
   color: #fff;
-  font-size: 30px;
+  font-size: clamp(1.375rem, 0.8333rem + 2.4074vw, 3rem);
   text-align: center;
   margin: 16px 0;
   text-transform: uppercase;
   font-weight: 800;
+  opacity: 0;
+  -webkit-transform: translateX(-16px);
+          transform: translateX(-16px);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#es-durex.es-durex .es-benefits__title.visible {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
-#es-durex.es-durex .es-benefits__text {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.4;
-  font-weight: 400;
+#es-durex.es-durex .es-benefits__title--strong {
+  font-family: 'One Night Sans Extended Black', sans-serif;
+  display: block;
 }
 
-#es-durex.es-durex .es-benefits__link {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: #005baa;
-  background-color: #fff;
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 13px 16px;
-  border-radius: 26px;
-  margin: 16px 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  letter-spacing: 2px;
-  border: 2px solid #fff;
-}
 
-#es-durex.es-durex .es-benefits__link:hover {
-  background-color: #005baa;
-  color: #fff;
-}
 
-#es-durex.es-durex .es-benefits__size {
-  margin: 45px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+#es-durex.es-durex .es-benefits__container {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 #es-durex.es-durex .es-benefits__img {
@@ -335,22 +413,142 @@
   display: block;
   margin: 0 auto;
 }
+#es-durex.es-durex .es-line {
+  display: none;
+}
 
 #es-durex.es-durex .es-benefits__benefit {
+  font-family: 'One Night Sans Extended Black', sans-serif;
   margin: 0;
   padding: 0;
   line-height: inherit;
-  margin-bottom: 16px;
   font-size: 18px;
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  opacity: 0;
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-#es-durex.es-durex .es-benefits__benefit:last-child {
-  margin-bottom: 0;
+#es-durex.es-durex .es-benefits__benefit.visible {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
+
+@media (min-width: 768px) {
+  #es-durex.es-durex .es-benefits {
+    padding-bottom: 0;
+  }
+  #es-durex.es-durex .es-benefits__container {
+   position: relative;
+   overflow: hidden;
+   
+  }
+  #es-durex.es-durex .es-benefits__img {
+    margin-bottom: -95px;
+    margin-top: 50px;
+    scale: 1;
+    transition: all ease-in-out 200ms;
+  }
+  #es-durex.es-durex .es-benefits__img:hover {
+    scale: 1.05;
+  }
+  #es-durex.es-durex .es-benefits__benefit {
+    position: absolute;
+    transform: translate(-50%, 0);
+  }
+  #es-durex.es-durex .es-line {
+    display: block;
+  }
+  #es-durex.es-durex .es-benefits__benefit:nth-of-type(1) {
+    top: 20%;
+    left: 25%;
+  }
+  .es-line--1 {
+    position: absolute;
+    width: 71px;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(52deg);
+    top: 29%;
+    left: 39%;
+  }
+  #es-durex.es-durex .es-benefits__benefit:nth-of-type(2) {
+    top: calc(50% - 1em);
+    left: 9%;
+    text-align: right;
+    width: 11ch;
+  }
+  .es-line--2 {
+    position: absolute;
+    width: 93px;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(19deg);
+    top: 50%;
+    left: 36%;
+  }
+  #es-durex.es-durex .es-benefits__benefit:nth-of-type(3) {
+    top: 77%;
+    left: 5%;
+    text-align: right;
+    width: 14ch;
+  }
+  .es-line--3 {
+    position: absolute;
+    width: 63px;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(346deg);
+    top: 72%;
+    left: 38%;
+  }
+  #es-durex.es-durex .es-benefits__benefit:nth-of-type(4) {
+    top: calc(20% - 1em);
+    right: 13%;
+    width: 10ch;
+    text-align: left;
+  }
+  .es-line--4 {
+    position: absolute;
+    width: 90px;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(347deg);
+    top: 18%;
+    right: 38%;
+  }
+  #es-durex.es-durex .es-benefits__benefit:nth-of-type(5) {
+    top: 49%;
+    right: 5%;
+  }
+  .es-line--5 {
+    position: absolute;
+    width: 98px;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(348deg);
+    top: 50%;
+    right: 34%;
+  }
+  #es-durex.es-durex .es-benefits__benefit:nth-of-type(6) {
+    top: 77%;
+    right: 3%;
+    text-align: left;
+    width: 15ch;
+  }
+  .es-line--6 {
+    position: absolute;
+    width: 56px;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(0deg);
+    top: 74%;
+    right: 39%;
+  }
+}
+
+
+/***************************** know styles ***************************/
 
 #es-durex.es-durex .es-know {
   background: url(https://www.ros.net.pl/Portals/0/rich-content/durex/5052197004984/assets/know.png) no-repeat left center;
@@ -1037,51 +1235,6 @@
 
 @media screen and (min-width: 768px) {
 
-  #es-durex.es-durex .es-benefits {
-    padding: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #es-durex.es-durex .es-benefits__title {
-    font-size: 50px;
-  }
-  #es-durex.es-durex .es-benefits__content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -ms-flex-preferred-size: 41.66667%;
-        flex-basis: 41.66667%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #es-durex.es-durex .es-benefits__size {
-    margin: 0;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -ms-flex-preferred-size: 41.66667%;
-        flex-basis: 41.66667%;
-    padding-top: 20px;
-    margin-bottom: -40px;
-  }
-  #es-durex.es-durex .es-benefits__container {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -ms-flex-preferred-size: 16.66667%;
-        flex-basis: 16.66667%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #es-durex.es-durex .es-benefits__benefit {
-    text-align: left;
-  }
   #es-durex.es-durex .es-know {
     height: 379px;
     display: -webkit-box;
@@ -1345,103 +1498,10 @@
   }
 }
 
-#es-durex.es-durex .es-features__title {
-  opacity: 0;
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-  -webkit-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
-}
 
-#es-durex.es-durex .es-features__title.visible {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
+/* animations */ 
 
-#es-durex.es-durex .es-features__feature {
-  opacity: 0;
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-  -webkit-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
-}
 
-#es-durex.es-durex .es-features__feature.visible {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-#es-durex.es-durex .es-benefits__logo {
-  opacity: 0;
-  -webkit-transform: translateX(-16px);
-          transform: translateX(-16px);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-#es-durex.es-durex .es-benefits__logo.visible {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-#es-durex.es-durex .es-benefits__title {
-  opacity: 0;
-  -webkit-transform: translateX(-16px);
-          transform: translateX(-16px);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-#es-durex.es-durex .es-benefits__title.visible {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-#es-durex.es-durex .es-benefits__text {
-  opacity: 0;
-  -webkit-transform: translateX(-16px);
-          transform: translateX(-16px);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-#es-durex.es-durex .es-benefits__text.visible {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-#es-durex.es-durex .es-benefits__link {
-  opacity: 0;
-  -webkit-transform: translateX(-16px);
-          transform: translateX(-16px);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-#es-durex.es-durex .es-benefits__link.visible {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-#es-durex.es-durex .es-benefits__benefit {
-  opacity: 0;
-  -webkit-transform: translateX(16px);
-          transform: translateX(16px);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-#es-durex.es-durex .es-benefits__benefit.visible {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
 
 #es-durex.es-durex .es-banner__photo {
   opacity: 0;
@@ -1471,103 +1531,5 @@
           transform: translateY(0px);
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(-10%, -50%) rotate(30deg);
-            transform: translate(-10%, -50%) rotate(30deg);
-  }
-}
 
-@keyframes rotate {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(-10%, -50%) rotate(30deg);
-            transform: translate(-10%, -50%) rotate(30deg);
-  }
-}
-
-@-webkit-keyframes point {
-  0% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-  50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-}
-
-@keyframes point {
-  0% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-  50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-}
-
-@-webkit-keyframes point-horizontal {
-  0% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-  }
-  50% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  100% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-  }
-}
-
-@keyframes point-horizontal {
-  0% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-  }
-  50% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  100% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-  }
-}
-
-@-webkit-keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /*# sourceMappingURL=style.css.map */
