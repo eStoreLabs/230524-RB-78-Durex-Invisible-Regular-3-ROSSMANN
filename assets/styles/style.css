@@ -953,7 +953,6 @@ section {
   color: var(--es-navy-bg);
   font-family: "One Night Sans Extended";
   text-transform: uppercase;
-  max-width: 11ch;
 }
 
 #es-durex.es-durex .es-cross__text--bottom {
