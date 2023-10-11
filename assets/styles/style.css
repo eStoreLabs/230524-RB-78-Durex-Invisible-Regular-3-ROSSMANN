@@ -140,6 +140,18 @@
   }
 }
 
+@keyframes pulse-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 /*********************************************************************/
 /***************************** main styles ***************************/
 /*********************************************************************/
@@ -723,7 +735,7 @@ section {
   align-items: center;
   position: absolute;
   left: 50%;
-  bottom: -7%;
+  bottom: -28%;
   transform: translate(-50%, 0);
   width: 70%;
 }
@@ -732,15 +744,17 @@ section {
 }
 #es-durex.es-durex .es-tip__img--top {
   margin-bottom: -5px;
+  z-index: 1;
 }
 #es-durex.es-durex .es-info__container {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 #es-durex.es-durex .es-info__title {
   font-family: "One Night Sans Extended Thin";
   font-size: clamp(1.375rem, 0.8333rem + 2.4074vw, 3rem);
   text-transform: uppercase;
+  padding-inline: 2rem;
 }
 #es-durex.es-durex .es-info__title--strong {
   font-family: "One Night Sans Extended Black";
@@ -778,17 +792,6 @@ section {
   animation: pulse-animation 2s;
   animation-delay: calc(2s * 2);
 }
-@keyframes pulse-animation {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.05);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
 
 #es-durex.es-durex .es-info__size {
   display: flex;
@@ -805,7 +808,7 @@ section {
 
 #es-durex.es-durex .es-info__text {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: clamp(0.875rem, 0.7917rem + 0.3704vw, 1.125rem);
   text-align: center;
   margin: 0;
 }
@@ -828,6 +831,12 @@ section {
 @media (min-width: 768px) {
   #es-durex.es-durex .es-tip__title {
     margin-top: 3rem;
+  }
+  #es-durex.es-durex .es-tip__container {
+    bottom: -12%;
+  }
+  #es-durex.es-durex .es-info__container {
+    margin-top: 5rem;
   }
   #es-durex.es-durex .es-info__desktop-container {
     display: flex;
