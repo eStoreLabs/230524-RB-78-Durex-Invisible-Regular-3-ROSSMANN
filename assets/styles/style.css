@@ -735,7 +735,7 @@ section {
   align-items: center;
   position: absolute;
   left: 50%;
-  bottom: -28%;
+  bottom: -12%;
   transform: translate(-50%, 0);
   width: 70%;
 }
@@ -743,7 +743,8 @@ section {
   max-width: 100%;
 }
 #es-durex.es-durex .es-tip__img--top {
-  margin-bottom: -5px;
+  margin-bottom: -96px;
+  transition: margin-bottom 0.5s ease;
   z-index: 1;
 }
 #es-durex.es-durex .es-info__container {
@@ -833,7 +834,7 @@ section {
     margin-top: 3rem;
   }
   #es-durex.es-durex .es-tip__container {
-    bottom: -12%;
+    bottom: -2%;
   }
   #es-durex.es-durex .es-info__container {
     margin-top: 5rem;
