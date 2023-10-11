@@ -995,22 +995,20 @@ section {
 /***************************** FAQ styles ***************************/
 
 #es-durex.es-durex .es-faq {
-  margin: 45px 0;
+  padding: 2rem;
+  background-image: url(/assets/img/faq-bg.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #es-durex.es-durex .es-faq__title {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  margin: 24px 0;
-  font-size: 40px;
   text-align: center;
+  font-family: "One Night Sans Extended Thin";
+  font-size: clamp(1.375rem, 0.8333rem + 2.4074vw, 3rem);
   text-transform: uppercase;
-  font-weight: 200;
 }
-
-#es-durex.es-durex .es-faq__title strong {
-  font-weight: 800;
+#es-durex.es-durex .es-faq__title--strong {
+  font-family: "One Night Sans Extended Black";
 }
 
 #es-durex.es-durex .es-faq__container {
@@ -1020,12 +1018,12 @@ section {
 }
 
 #es-durex.es-durex .es-faq__single {
-  background: #fff;
+  font-family: "One Night Sans Medium";
+  background: #e7eced;
   position: relative;
   margin: 8px 0;
-  padding: 24px 16px 24px 24px;
+  padding: 16px;
   border: none;
-  border-radius: 16px;
   -webkit-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
 }
@@ -1047,9 +1045,9 @@ section {
   margin: 0;
   padding: 0;
   line-height: 1.2;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2778vw, 1rem);
   max-width: 83.33333%;
+  text-transform: uppercase;
 }
 
 #es-durex.es-durex .es-faq__arrow {
@@ -1059,6 +1057,11 @@ section {
   outline: #005baa;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+#es-durex.es-durex .es-faq__arrow img {
+  width: 24px;
+  height: 24px;
+  rotate: 90deg;
 }
 
 #es-durex.es-durex .es-faq__arrow--open {
@@ -1093,5 +1096,8 @@ section {
 @media screen and (min-width: 768px) {
   #es-durex.es-durex .es-faq__title {
     font-size: 48px;
+  }
+  #es-durex.es-durex .es-faq__single {
+    padding: 24px 16px 24px 24px;
   }
 }
