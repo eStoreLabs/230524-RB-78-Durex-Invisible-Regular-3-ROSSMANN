@@ -871,6 +871,43 @@
     margin-top: 52px;
   }
 }
+/***************************** video styles ***************************/
+#es-durex.es-durex .es-video__content {
+  width: 100vw;
+  height: auto;
+}
+#es-durex.es-durex .es-video__wrapper {
+  position: relative;
+  width: 100%;
+}
+#es-durex.es-durex .iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+#es-durex.es-durex .es-poster-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+#es-durex.es-durex #YTplayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: none;
+}
+
+
+
+/***************************** FAQ styles ***************************/
 
 #es-durex.es-durex .es-faq {
   margin: 45px 0;
