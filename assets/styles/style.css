@@ -7,33 +7,23 @@
 }
 @font-face {
   font-family: "One Night Sans Extended Thin";
-  src: url(../fonts/OneNightSans-ExtendedThin.woff) format("woff"),
-    url(../fonts/OneNightSans-ExtendedThin.woff2) format("woff2");
+  src: url(../fonts/OneNightSans-ExtendedThin.woff) format("woff");
 }
 @font-face {
   font-family: "One Night Sans Extended";
-  src: url(../fonts/OneNightSans-Extended.woff) format("woff"),
-    url(../fonts/OneNightSans-Extended.woff2) format("woff2");
+  src: url(../fonts/OneNightSans-Extended.woff) format("woff");
 }
 @font-face {
   font-family: "One Night Sans Extended Black";
-  src: url(../fonts/OneNightSans-ExtendedBlack.woff) format("woff"),
-    url(../fonts/OneNightSans-ExtendedBlack.woff2) format("woff2");
+  src: url(../fonts/OneNightSans-ExtendedBlack.woff) format("woff");
 }
 @font-face {
   font-family: "One Night Sans Thin";
-  src: url(../fonts/OneNightSans-Thin.woff) format("woff"),
-    url(../fonts/OneNightSans-Thin.woff2) format("woff2");
+  src: url(../fonts/OneNightSans-Thin.woff) format("woff");
 }
 @font-face {
   font-family: "One Night Sans Medium";
-  src: url(../fonts/OneNightSans-Medium.woff) format("woff"),
-    url(../fonts/OneNightSans-Medium.woff2) format("woff2");
-}
-@font-face {
-  font-family: "One Night Sans Black";
-  src: url(../fonts/OneNightSans-Black.woff) format("woff"),
-    url(../fonts/OneNightSans-Black.woff2) format("woff2");
+  src: url(../fonts/OneNightSans-Medium.woff) format("woff");
 }
 
 /*********************************************************************/
