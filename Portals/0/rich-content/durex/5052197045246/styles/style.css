@@ -5,26 +5,8 @@
   --es-size-regular: #051b72;
   --es-size-wide: #e87029;
 }
-@font-face {
-  font-family: "One Night Sans Extended Thin";
-  src: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/fonts/OneNightSans-ExtendedThin.woff") format("woff");
-}
-@font-face {
-  font-family: "One Night Sans Extended";
-  src: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/fonts/OneNightSans-Extended.woff") format("woff");
-}
-@font-face {
-  font-family: "One Night Sans Extended Black";
-  src: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/fonts/OneNightSans-ExtendedBlack.woff") format("woff");
-}
-@font-face {
-  font-family: "One Night Sans Thin";
-  src: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/fonts/OneNightSans-Thin.woff") format("woff");
-}
-@font-face {
-  font-family: "One Night Sans Medium";
-  src: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/fonts/OneNightSans-Medium.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;500;800&family=Encode+Sans:wght@100;500&display=swap');
+
 
 /*********************************************************************/
 /***************************** animations ***************************/
@@ -147,10 +129,11 @@
 /*********************************************************************/
 
 #es-durex.es-durex {
-  font-family: "One Night Sans Extended", sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  max-width: 930px;
+  max-width: 959px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -173,12 +156,14 @@ section {
 }
 
 #es-durex.es-durex .es-kv__container {
-  background-image: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/img/bg.png");
+  background-image: url("../img/bg.png");
+  background-size: 100% 100%;
   padding: 3rem;
 }
 
 #es-durex.es-durex .es-kv__title {
-  font-family: "One Night Sans Extended", sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   line-height: inherit;
@@ -191,7 +176,7 @@ section {
 }
 
 #es-durex.es-durex .es-kv__title--second {
-  font-family: "One Night Sans Extended Thin", sans-serif;
+  font-weight: 300;
 }
 
 #es-durex.es-durex .es-kv__packshot {
@@ -236,7 +221,7 @@ section {
     max-width: 100%;
     position: relative;
     z-index: 2;
-    background-image: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/img/kv-desktop.png");
+    background-image: url("../img/kv-desktop.png");
     background-size: cover;
     background-position: center;
     min-height: 340px;
@@ -247,7 +232,7 @@ section {
     position: absolute;
     top: 11%;
     right: 2%;
-    width: 8ch;
+    width: 9ch;
     text-align: left;
     margin-bottom: unset;
   }
@@ -273,7 +258,7 @@ section {
 /***************************** features styles ***************************/
 #es-durex.es-durex .es-features {
   padding: 2rem;
-  background-image: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/img/bg.png");
+  background-image: url("../img/bg.png");
   background-size: cover;
 }
 
@@ -315,12 +300,14 @@ section {
   font-size: clamp(0.875rem, 0.7917rem + 0.3704vw, 1.125rem);
   text-align: center;
   text-transform: uppercase;
-  font-family: "One Night Sans Thin";
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 100;
 }
 
 #es-durex.es-durex .es-features .es-feature__text--bold {
   display: block;
-  font-family: "One Night Sans Extended Black", sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 800;
 }
 @media (min-width: 768px) {
   #es-durex.es-durex .es-features {
@@ -380,7 +367,7 @@ section {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-image: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/img/slider-bg.png");
+  background-image: url("/assets/img/slider-bg.png");
   background-size: cover;
 }
 #es-durex.es-durex .es-slider .es-slide__img {
@@ -393,17 +380,35 @@ section {
   padding-inline: 4rem;
 }
 #es-durex.es-durex .es-slider .es-slide__title {
-  font-family: "One Night Sans Extended Black", sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: clamp(1.375rem, 0.9583rem + 1.8519vw, 2.625rem);
 }
+#es-durex.es-durex .es-slider .es-slide__text-container--3 {
+  position: relative;
+}
+#es-durex.es-durex .es-slider .es-slide__text-container--3:before {
+  content: "";
+  background-image: url("/assets/img/badge.png");
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: -99%;
+  right: -39%;
+  transform: translate(-50%, -50%);
+}
 #es-durex.es-durex .es-slider .es-slide__text {
-  font-family: "One Night Sans Medium", sans-serif;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.7917rem + 0.3704vw, 1.125rem);
 }
 #es-durex.es-durex .es-slider .es-slide__text--smaller {
-  font-family: "One Night Sans Medium", sans-serif;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(0.75rem, 0.6667rem + 0.3704vw, 1rem);
 }
@@ -451,6 +456,12 @@ section {
   #es-durex.es-durex .es-slider .es-slide__container {
     padding-inline: 0rem 4rem;
   }
+  #es-durex.es-durex .es-slider .es-slide__text-container--3:before {
+    height: 100px;
+    width: 100px;
+    top: -45%;
+    right: -14%;
+  }
 }
 
 /***************************** benefits styles ***************************/
@@ -461,7 +472,7 @@ section {
 }
 
 #es-durex.es-durex .es-benefits__title {
-  font-family: "One Night Sans Extended Thin", sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   line-height: inherit;
@@ -470,7 +481,6 @@ section {
   text-align: center;
   margin: 16px 0;
   text-transform: uppercase;
-  font-weight: 800;
   opacity: 0;
   -webkit-transform: translateX(-16px);
   transform: translateX(-16px);
@@ -484,7 +494,7 @@ section {
 }
 
 #es-durex.es-durex .es-benefits__title--strong {
-  font-family: "One Night Sans Extended Black", sans-serif;
+  font-weight: 800;
   display: block;
 }
 
@@ -505,12 +515,11 @@ section {
 }
 
 #es-durex.es-durex .es-benefits__benefit {
-  font-family: "One Night Sans Extended Black", sans-serif;
+ font-weight: 800;
   margin: 0;
   padding: 0;
   line-height: inherit;
   font-size: 18px;
-  font-weight: 800;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -679,7 +688,7 @@ section {
 /***************************** info styles ***************************/
 
 #es-durex.es-durex .es-info {
-  background-image: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/img/fit-bg.png");
+  background-image: url("/assets/img/fit-bg.png");
   background-size: 100% 100%;
   padding-top: 3rem;
 }
@@ -703,15 +712,15 @@ section {
   padding: 0.5rem;
 }
 #es-durex.es-durex .es-tip__title {
-  font-family: "One Night Sans Extended Black";
+  font-weight: 800;
   font-size: clamp(1.25rem, 1.0417rem + 0.9259vw, 1.875rem);
   margin: 0;
   margin-top: 2rem;
 }
 #es-durex.es-durex .es-tip__text {
-  font-family: "One Night Sans Extended Thin";
+  font-weight: 300;
   font-size: clamp(1.125rem, 1rem + 0.5556vw, 1.5rem);
-  padding-inline: 1rem;
+  padding-inline: 1.5rem;
   margin-block: 0.5rem;
 }
 #es-durex.es-durex .es-tip__arrow {
@@ -742,13 +751,13 @@ section {
   margin-top: 7rem;
 }
 #es-durex.es-durex .es-info__title {
-  font-family: "One Night Sans Extended Thin";
+  font-weight: 300;
   font-size: clamp(1.375rem, 0.8333rem + 2.4074vw, 3rem);
   text-transform: uppercase;
   padding-inline: 2rem;
 }
 #es-durex.es-durex .es-info__title--strong {
-  font-family: "One Night Sans Extended Black";
+  font-weight: 800;
 }
 
 #es-durex.es-durex .es-info__chart-container {
@@ -804,15 +813,17 @@ section {
   margin: 0;
 }
 #es-durex.es-durex .es-info__close {
-  font-family: "One Night Sans Thin";
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 100;
   color: var(--es-size-thin);
 }
 #es-durex.es-durex .es-info__regular {
-  font-family: "One Night Sans Medium";
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 600;
   color: var(--es-size-regular);
 }
 #es-durex.es-durex .es-info__wide {
-  font-family: "One Night Sans Extended Black";
+  font-weight: 800;
   color: var(--es-size-wide);
 }
 #es-durex.es-durex .es-info__img {
@@ -895,7 +906,7 @@ section {
 /****************************** cross styles ***************************/
 #es-durex.es-durex .es-cross {
   text-align: center;
-  background-image: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/img/cross-bg.png");
+  background-image: url("/assets/img/cross-bg.png");
   background-size: cover;
   background-position: center;
   padding: 2rem;
@@ -908,12 +919,12 @@ section {
   font-size: clamp(1.375rem, 1.2083rem + 0.7407vw, 1.875rem);
   text-align: center;
   text-transform: uppercase;
-  font-family: "One Night Sans Extended Thin";
+  font-weight: 300;
 }
 
 #es-durex.es-durex .es-cross__strong {
   display: block;
-  font-family: "One Night Sans Extended Black";
+  font-weight: 800;
 }
 #es-durex.es-durex .es-cross__container {
   display: flex;
@@ -951,12 +962,14 @@ section {
   font-size: 16px;
   text-align: center;
   color: var(--es-navy-bg);
-  font-family: "One Night Sans Extended";
   text-transform: uppercase;
+  max-width: 15ch;
+  font-weight: 400;
 }
 
 #es-durex.es-durex .es-cross__text--bottom {
-  font-family: "One Night Sans Medium";
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -995,19 +1008,19 @@ section {
 
 #es-durex.es-durex .es-faq {
   padding: 2rem;
-  background-image: url("https://www.ros.net.pl/Portals/0/rich-content/durex/3256415/img/faq-bg.png");
+  background-image: url("/assets/img/faq-bg.png");
   background-size: cover;
   background-position: center;
 }
 
 #es-durex.es-durex .es-faq__title {
   text-align: center;
-  font-family: "One Night Sans Extended Thin";
+  font-weight: 300;
   font-size: clamp(1.375rem, 0.8333rem + 2.4074vw, 3rem);
   text-transform: uppercase;
 }
 #es-durex.es-durex .es-faq__title--strong {
-  font-family: "One Night Sans Extended Black";
+  font-weight: 800;
 }
 
 #es-durex.es-durex .es-faq__container {
@@ -1017,7 +1030,8 @@ section {
 }
 
 #es-durex.es-durex .es-faq__single {
-  font-family: "One Night Sans Medium";
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 500;
   background: #e7eced;
   position: relative;
   margin: 8px 0;
@@ -1089,7 +1103,7 @@ section {
   padding: 0;
   line-height: 1.25;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
