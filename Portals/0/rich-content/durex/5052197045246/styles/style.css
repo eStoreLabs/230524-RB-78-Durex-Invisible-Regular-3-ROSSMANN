@@ -1128,7 +1128,7 @@ section {
 #es-durex.es-durex .es-footer__text {
   text-align: center;
   text-wrap: balance;
+  text-transform: uppercase;
   font-weight: 800;
-  margin: 0;
-  font-size: clamp(1rem, 0.8276rem + 0.7882vw, 1.3rem);
+  font-size: clamp(1.375rem, 1.2083rem + 0.7407vw, 1.875rem);
 }
